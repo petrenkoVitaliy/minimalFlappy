@@ -94,17 +94,17 @@ function render () {
   ctx.fillStyle = 'white'
   ctx.fillRect(0, 0, canvas.width, canvas.height)
   for (var i = 0; i < barriers.length; ++i) {
-    ctx.fillStyle = 'black'
+    ctx.fillStyle = '#535353'
     ctx.fillRect(barriers[i][0], 0, width, canvas.height)
     ctx.fillStyle = 'white'
     ctx.fillRect(barriers[i][0] - 5, barriers[i][2], width + 10, 200)
   }
-  ctx.fillStyle = 'black'
+  ctx.fillStyle = '#535353'
   ctx.fillRect(300, py, wdE, hgE)
-  ctx.fillStyle = 'black'
-  ctx.font = '20px Verdana'
-  ctx.fillText('Enter - pause', 30, 575)
-  ctx.fillText('Space - jump', 30, 595)
+  ctx.fillStyle = '#535353'
+  ctx.font = '20px Tahoma'
+  ctx.fillText('Enter  -  pause', 30, 575)
+  ctx.fillText('Space -  jump', 30, 595)
   ctx.fillText('high: ' + hPoint, 40, 85)
   ctx.font = '30px Verdana'
   ctx.fillText('Score: ' + point, 40, 60)
